@@ -22,8 +22,7 @@
             <th>Nome</th>
             <th>Calibre</th>
             <th>Código</th>
-            <th>Deletar</th>
-            <th>Alterar</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -34,11 +33,6 @@
             <td align="center">
                 <a class="waves-effect waves-light btn-small" th:href="${(#mvc.url('EC#deletarEquipamento').arg(0, equipamento.codigo)).build()}">
                 <i style="color: darkred" class="material-icons left">delete</i>
-                </a>
-            </td>
-            <td align="center">
-                <a class="waves-effect waves-light btn-small" th:href="${(#mvc.url('EC#atualizarEquipamento').arg(0, equipamento.codigo)).build()}">
-                    <i style="color: darkblue" class="material-icons left">system_update_alt</i>
                 </a>
             </td>
         </tr>

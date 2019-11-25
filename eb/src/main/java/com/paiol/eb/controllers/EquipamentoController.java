@@ -39,16 +39,4 @@ public class EquipamentoController {
         repository.delete(equipamento);
        return "redirect:/cadastrar-equipamento/equipamentos";
     }
-
-    @GetMapping("/alterar")
-    public String atualizarEquipamento(Long codigo) {
-        Equipamento equipamento = repository.findByCodigo(codigo);
-        repository.delete(equipamento);
-        ModelAndView modelAndView = new ModelAndView("equipamento/editarEquipamento");
-        modelAndView.addObject("equipamento", equipamento);
-        repository.save(equipamento);
-        return "redirect:/cadastrar-equipamento";
-
-//        return modelAndView;
-    }
 }
