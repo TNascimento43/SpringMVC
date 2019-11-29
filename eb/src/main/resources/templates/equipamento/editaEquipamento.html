@@ -14,7 +14,8 @@
         Preencha os dados para editar um equipamento na Reserva de Armamentos.
     </p>
     <!--    <form class="color-rect-border" modelAttribute="equipamento" method="post">-->
-    <form action="#" class="color-rect-border" th:action="@{/cadastrar-equipamento/update/{codigo}(codigo=${equipamento.codigo})}"
+    <form action="#" class="color-rect-border"
+          th:action="@{/cadastrar-equipamento/update/{codigo}(codigo=${equipamento.codigo})}"
           th:object="${equipamento}" method="post">
         <label style="color: #0f9d58" for="nome"><b>NOME</b></label><br>
         <input style="width: 600px;" th:field="*{nome}" id="nome" type="text" class="validate"
