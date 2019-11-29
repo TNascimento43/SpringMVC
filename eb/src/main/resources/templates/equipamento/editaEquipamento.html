@@ -6,15 +6,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+</head>
 <body style="padding: 50px; background-color: #e8fce5; font-family: 'Lucida Console'">
 <div align="center">
-    <h1>RESERVA DE ARMAMENTO EB</h1>
-    <p style="padding: 30px"><b>Sistema destinado para cadastro de novos equipamentos adquiridos pela unidade para
-        compor sua reserva de armamentos.</b></p>
-    <div>
-        <a class="btn btn-success" href="/cadastrar-equipamento">Cadastro de novos Equipamentos</a><br>
-        <br><a class="btn btn-success" href="/cadastrar-equipamento/equipamentos">Equipamentos Disponíveis</a>
-    </div>
+    <h1>Editar equipamento</h1>
+    <p>
+        Preencha os dados para editar um equipamento na Reserva de Armamentos.
+    </p>
+    <!--    <form class="color-rect-border" modelAttribute="equipamento" method="post">-->
+    <form action="#" class="color-rect-border" th:action="@{/cadastrar-equipamento/update/{codigo}(codigo=${equipamento.codigo})}"
+          th:object="${equipamento}" method="post">
+        <label style="color: #0f9d58" for="nome"><b>NOME</b></label><br>
+        <input style="width: 600px;" th:field="*{nome}" id="nome" type="text" class="validate"
+               name="nome"><br>
+        <label style="color: #0f9d58" for="calibre"><b>CALIBRE</b></label><br>
+        <input style="width: 600px;" th:field="*{calibre}" id="calibre" type="text" class="validate"
+               name="calibre"><br>
+        <br>
+        <a class="btn btn-success" href="/"><b>VOLTAR</b></a>
+        <button type="submit" class="btn btn-success"><b>SALVAR</b></button>
+    </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
