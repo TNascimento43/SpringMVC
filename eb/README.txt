@@ -1,12 +1,13 @@
 #RESERVA DE EQUIPAMENTOS
 
-Trabalho acadêmico da disciplina de Tecnologias WEB (2019.2) do Curso de Sistemas de Informação na Pontifícia Universidade Católica MG - Betim.
+Trabalho acadÃªmico da disciplina de Tecnologias WEB (2019.2) do Curso de Sistemas de InformaÃ§Ã£o na PontifÃ­cia Universidade CatÃ³lica MG - Betim.
 
 Um sistema de gerenciamento de equipamentos em um paiol militar, que permite:
 
 *Cadastro de novos equipamentos;
-*Deleção de equipamento esqpecífico;
-*Vizualização de equipamentos disponíveis.
+*DeleÃ§Ã£o de equipamento especÃ­fico;
+*AlteraÃ§Ã£o de equipamento especÃ­fico;
+*VizualizaÃ§Ã£o de equipamentos disponÃ­veis.
 
 ====================================================================================
 
@@ -20,12 +21,12 @@ Sistema realizado com Spring MVC.
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
 
-Dependências do projeto:
+DependÃªncias do projeto:
 JPA
 Hibernate
 MySQL
 DevTools
 Thymeleaf.
 
-Para rodar projeto é preciso ter uma IDEA com suporte para JAVA;
+Para rodar projeto Ã© preciso ter uma IDEA com suporte para JAVA;
 Banco de Dados Local MySQL.
